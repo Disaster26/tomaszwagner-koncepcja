@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Tomasz Wagner - projektant mebli, produktów i scenografii, Kraków | Wagner Projekt</title>
+<meta name="description" content="Tomasz Wagner, Wagner Projekt z Krakowa: unikatowe meble na zamówienie, wzornictwo przemysłowe, scenografia teatralna i telewizyjna, wnętrza oraz figury owadów do parków tematycznych.">
+<link rel="preload" href="fonts/archivo-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/parki-2-768.webp" imagesrcset="img/parki-2-480.webp 480w, img/parki-2-768.webp 768w, img/parki-2-1024.webp 1024w" imagesizes="(max-width: 760px) 50vw, 25vw"><link rel="preload" as="image" href="img/meble-3-708.webp" imagesrcset="img/meble-3-480.webp 480w, img/meble-3-708.webp 708w" imagesizes="(max-width: 760px) 50vw, 25vw">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 186 186'%3E%3Cpath d='M0 0h186v54h-36V36h-39v114h39V90h36v96H0V90h36v60h39V36H36v18H0z'/%3E%3C/svg%3E">
+<style>@font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2026}
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Archivo-fb";src:local("Arial");size-adjust:102%;ascent-override:90%;descent-override:22%;line-gap-override:0%}
+:root{--cz:#111;--bi:#fff;--sz:#F1F2F4;--zo:#F2CF41;--tx:#1d1d1f;--tx2:#55585e;--hdr:64px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hdr)}
+body{margin:0;background:#fff;color:var(--tx);font:16px/1.6 "Archivo","Archivo-fb",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1240px,100% - 40px);margin:0 auto}
+.znak{width:100%;height:100%;display:block}
+/* nagłówek */
+.hdr{position:sticky;top:0;z-index:50;height:var(--hdr);background:#fff;border-bottom:1px solid #e3e4e7}
+.hdr .wrap{height:100%;display:flex;align-items:center;gap:28px;width:min(1600px,100% - 40px)}
+.marka{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;font-size:18px;letter-spacing:.01em;white-space:nowrap}
+.marka .ico{width:32px;height:32px;color:var(--cz)}
+.marka small{display:block;font-weight:500;font-size:12px;color:var(--tx2);letter-spacing:0;line-height:1.1}
+.marka span{line-height:1.15}
+.menu{margin-left:auto}
+.menu ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+.menu a{text-decoration:none;font-weight:600;font-size:15px;padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover,.menu a.akt{border-color:var(--zo)}
+.mtel{display:none}
+.tel{font-weight:700;text-decoration:none;white-space:nowrap;padding:9px 16px;background:var(--cz);color:#fff;font-size:15px}
+.tel:hover{background:#2a2a2a}
+.burger{display:none;margin-left:auto;min-width:64px;padding:0 12px;height:44px;border:0;background:var(--cz);color:#fff;font:700 13px/1 "Archivo",Arial;cursor:pointer}
+/* pierwszy ekran: mozaika prac + czarny blok jak znak */
+.hero{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr 1fr;gap:6px;padding:6px;height:calc(100svh - var(--hdr));min-height:560px;max-height:1240px;background:#fff}
+.kafel{margin:0;position:relative;overflow:hidden;background:var(--sz)}
+.kafel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.kafel figcaption{position:absolute;left:0;bottom:0;background:rgba(17,17,17,.82);color:#fff;font-size:13px;font-weight:600;padding:6px 10px}
+.k1{grid-area:1/1}.k2{grid-area:1/2}.k3{grid-area:1/3}.k4{grid-area:1/4}.k5{grid-area:2/1}.k6{grid-area:2/4}.k7{display:none}
+.blok{grid-area:2/2/3/4;background:var(--cz);color:#fff;display:flex;flex-direction:column;justify-content:center;padding:clamp(24px,3.2vw,56px);position:relative}
+.blok h1{margin:0 0 14px;font-size:clamp(26px,2.5vw,58px);line-height:1.1;font-weight:800;letter-spacing:-.01em;max-width:20ch}
+.blok p{margin:0 0 26px;color:#d6d7da;font-size:clamp(15px,1.05vw,21px);max-width:52ch}
+.przyciski{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid transparent}
+.btn-z{background:var(--zo);color:var(--cz)}
+.btn-z:hover{background:#ffdc55}
+.btn-o{border-color:#fff;color:#fff}
+.btn-o:hover{background:#fff;color:var(--cz)}
+/* wprowadzenie */
+.intro{padding:clamp(56px,7vw,110px) 0 clamp(40px,5vw,80px)}
+.intro .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(28px,5vw,90px);align-items:start}
+.intro h2{margin:0;font-size:clamp(28px,3vw,48px);line-height:1.1;font-weight:800;letter-spacing:-.01em}
+.intro p{margin:0 0 14px;color:var(--tx2);font-size:17px}
+.spis{list-style:none;margin:26px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 24px;border-top:2px solid var(--cz)}
+.spis a{display:flex;justify-content:space-between;gap:10px;padding:13px 0;border-bottom:1px solid #dcdde1;text-decoration:none;font-weight:700}
+.spis a span{color:var(--tx2);font-weight:500}
+.spis a:hover{color:#000;border-color:var(--cz)}
+/* dziedziny */
+.dziedzina{padding:clamp(48px,6vw,96px) 0}
+.glowa{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:20px clamp(28px,5vw,90px);align-items:end;margin-bottom:30px}
+.glowa h2{margin:0;font-size:clamp(28px,3.2vw,52px);line-height:1.05;font-weight:800;letter-spacing:-.01em;display:flex;align-items:baseline;gap:16px}
+.nr{font-size:.42em;font-weight:700;background:var(--cz);color:#fff;padding:.25em .45em;line-height:1;transform:translateY(-.3em)}
+.glowa p{margin:0;color:var(--tx2);font-size:17px;max-width:62ch}
+.pas{position:relative}
+.tor{list-style:none;margin:0;padding:0 max(20px,calc((100% - 1240px)/2));display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab;outline:none}
+.tor::-webkit-scrollbar{display:none}
+.tor.ciag{cursor:grabbing;scroll-snap-type:none}
+.tor li{flex:none;scroll-snap-align:start}
+.praca{display:block;padding:0;border:0;background:#e9eaed;cursor:zoom-in;height:clamp(220px,24vw,340px)}
+.praca img{height:100%;width:auto;max-width:none}
+.podpis{display:block;font-size:14px;font-weight:600;margin-top:8px;color:var(--tx)}
+.strzalka{position:absolute;top:calc(50% - 40px);z-index:2;width:48px;height:48px;border:0;background:var(--cz);color:#fff;font-size:20px;cursor:pointer}
+.strzalka:hover{background:var(--zo);color:var(--cz)}
+.lewo{left:max(8px,calc((100% - 1240px)/2 - 60px))}.prawo{right:max(8px,calc((100% - 1240px)/2 - 60px))}
+.strzalka[disabled]{opacity:0;pointer-events:none}
+/* o mnie */
+.ciemna{background:var(--cz);color:#fff;padding:clamp(60px,7vw,120px) 0}
+.ciemna .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(32px,6vw,110px);align-items:center}
+.ciemna h2{margin:0 0 20px;font-size:clamp(30px,3.4vw,54px);line-height:1.06;font-weight:800;letter-spacing:-.01em}
+.ciemna p{color:#cfd0d4;font-size:17px;margin:0 0 14px;max-width:60ch}
+.fakty{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fakty li{border-top:2px solid var(--zo);padding-top:10px;font-weight:600;font-size:15px}
+.znak-duzy{color:var(--zo);width:min(100%,360px);margin-left:auto;aspect-ratio:1}
+/* prasa */
+.prasa{padding:clamp(56px,6vw,100px) 0;background:#fff}
+.prasa .praca{height:clamp(220px,22vw,320px)}
+#logo .praca{height:clamp(110px,14vw,200px);background:#fff}
+/* kontakt */
+.kontakt{background:var(--sz);padding:clamp(56px,6vw,100px) 0}
+.kontakt .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,100px)}
+.kontakt h2{margin:0 0 18px;font-size:clamp(30px,3.4vw,54px);line-height:1.05;font-weight:800}
+.kontakt p{color:var(--tx2);font-size:17px;margin:0 0 22px}
+.dane{display:grid;gap:12px}
+.dane a{display:block;text-decoration:none;font-weight:800;font-size:clamp(20px,2.2vw,32px);line-height:1.2;overflow-wrap:anywhere}
+.dane a:hover{text-decoration:underline;text-decoration-color:var(--zo);text-decoration-thickness:3px}
+.dane span{display:block;color:var(--tx2);font-size:14px;font-weight:600}
+form{background:#fff;padding:clamp(22px,3vw,40px);display:grid;gap:14px}
+label{font-weight:700;font-size:14px;display:grid;gap:6px}
+input,textarea,select{font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid #c9cbd0;background:#fff;color:var(--tx);border-radius:0}
+input:focus,textarea:focus,select:focus{outline:2px solid var(--cz);outline-offset:0;border-color:var(--cz)}
+textarea{min-height:120px;resize:vertical}
+form .btn{background:var(--cz);color:#fff;border:0;cursor:pointer;justify-self:start}
+form .btn:hover{background:#333}
+.uwaga{font-size:13px;color:var(--tx2);margin:0}
+/* stopka */
+.stopka{background:var(--cz);color:#b9bbc0;padding:36px 0;font-size:14px}
+.stopka .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between}
+.stopka .marka{color:#fff}.stopka .marka .ico{color:#fff}
+.stopka .marka small{color:#b9bbc0}
+.stopka a{text-decoration:none}
+/* podgląd zdjęcia */
+dialog{border:0;padding:0;background:transparent;max-width:none;max-height:none}
+dialog::backdrop{background:rgba(10,10,10,.92)}
+.lb{display:flex;flex-direction:column;align-items:center;gap:10px}
+.lb img{max-width:min(92vw,var(--w));max-height:84vh;width:auto;height:auto;object-fit:contain}
+.lb p{color:#fff;margin:0;font-weight:600}
+.lb-x{position:fixed;top:14px;right:14px;width:48px;height:48px;border:0;background:var(--zo);color:var(--cz);font-size:22px;font-weight:800;cursor:pointer}
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+/* telefon */
+@media (max-width:1180px){.menu ul{gap:16px}.menu a{font-size:14px}}
+@media (max-width:1020px){
+ .menu{display:none;position:fixed;top:var(--hdr);left:0;right:0;bottom:0;background:#fff;padding:12px 20px;overflow:auto}
+ .menu.otw{display:block}
+ .menu ul{flex-direction:column;gap:0}
+ .menu a{display:block;padding:14px 0;font-size:20px;border-bottom:1px solid #e3e4e7}
+ .burger{display:block}
+ .mtel{display:block}.mtel a{font-weight:800}
+ .hdr .tel{display:none}
+}
+@media (max-width:760px){
+ :root{--hdr:58px}
+ .marka{font-size:16px}.marka .ico{width:28px;height:28px}
+ .hero{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr auto;height:auto;min-height:calc(100svh - var(--hdr));max-height:none;gap:4px;padding:4px}
+ .k7{display:block;grid-area:1/1}.k2{grid-area:1/2}.k3{grid-area:2/1}.k5{grid-area:2/2}.k1,.k4,.k6{display:none}
+ .kafel{min-height:92px}
+ .kafel figcaption{font-size:11px;padding:4px 7px}
+ .blok{grid-area:3/1/4/3;padding:22px 18px 22px}
+ .blok h1{font-size:clamp(23px,6.6vw,30px);margin-bottom:10px}
+ .blok p{font-size:15px;margin-bottom:24px;line-height:1.5}
+ .przyciski{gap:10px}.btn{flex:1 1 140px;padding:0 14px}
+ .intro .wrap,.glowa,.ciemna .wrap,.kontakt .wrap{grid-template-columns:1fr}
+ .glowa h2{gap:12px}
+ .spis{grid-template-columns:1fr}
+ .strzalka{display:none}
+ .znak-duzy{width:150px;margin:0}
+ .fakty{grid-template-columns:1fr}
+ .stopka .wrap{flex-direction:column;align-items:flex-start}
+ .kontakt .wrap>*{min-width:0}
+}
+@media (max-width:760px) and (max-height:700px){.blok p{font-size:14px;margin-bottom:24px}.blok{padding:18px 16px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hdr"><div class="wrap">
+ <a class="marka" href="#top" aria-label="Wagner Projekt - początek strony"><span class="ico"><svg class="znak" viewBox="0 0 186 186" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 0h186v54h-36V36h-39v54h0v60h39V90h36v96H0V90h36v60h39V36H36v18H0z"/></svg></span><span>Wagner Projekt<small>Tomasz Wagner, Kraków</small></span></a>
+ <nav class="menu" id="menu" aria-label="Menu"><ul><li><a href="#parki">Parki</a></li><li><a href="#meble">Meble</a></li><li><a href="#scenografia">Scenografia</a></li><li><a href="#produkt">Produkt</a></li><li><a href="#wnetrza">Wnętrza</a></li><li><a href="#logo">Logo</a></li><li><a href="#o-mnie">O mnie</a></li><li><a href="#kontakt">Kontakt</a></li><li class="mtel"><a href="tel:+48608637210">Zadzwoń: 608 637 210</a></li></ul></nav>
+ <a class="tel" href="tel:+48608637210">608 637 210</a>
+ <button class="burger" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+</div></header>
+
+<main id="top">
+<section class="hero" aria-label="Wybrane prace">
+ <figure class="kafel k1"><img src="img/parki-2-768.webp" srcset="img/parki-2-480.webp 480w, img/parki-2-768.webp 768w, img/parki-2-1024.webp 1024w" sizes="(max-width: 760px) 50vw, 25vw" width="1024" height="666" alt="Biedronka oczatka" fetchpriority="high" decoding="async"><figcaption>Biedronka oczatka</figcaption></figure><figure class="kafel k2"><img src="img/meble-3-708.webp" srcset="img/meble-3-480.webp 480w, img/meble-3-708.webp 708w" sizes="(max-width: 760px) 50vw, 25vw" width="708" height="1024" alt="Lampa" fetchpriority="high" decoding="async"><figcaption>Lampa</figcaption></figure><figure class="kafel k3"><img src="img/scenografia-24-768.webp" srcset="img/scenografia-24-480.webp 480w, img/scenografia-24-768.webp 768w, img/scenografia-24-1024.webp 1024w" sizes="(max-width: 760px) 50vw, 25vw" width="1024" height="768" alt="Smok helowy" loading="lazy" decoding="async"><figcaption>Smok helowy</figcaption></figure><figure class="kafel k4"><img src="img/produkt-22-768.webp" srcset="img/produkt-22-480.webp 480w, img/produkt-22-768.webp 768w, img/produkt-22-1024.webp 1024w" sizes="(max-width: 760px) 50vw, 25vw" width="1024" height="768" alt="Projekt sztućców - Gerlach" loading="lazy" decoding="async"><figcaption>Projekt sztućców - Gerlach</figcaption></figure><figure class="kafel k5"><img src="img/meble-4-768.webp" srcset="img/meble-4-480.webp 480w, img/meble-4-768.webp 768w, img/meble-4-1024.webp 1024w" sizes="(max-width: 760px) 50vw, 25vw" width="1024" height="768" alt="Łóżko 77" loading="lazy" decoding="async"><figcaption>Łóżko 77</figcaption></figure><figure class="kafel k6"><img src="img/parki-13-768.webp" srcset="img/parki-13-480.webp 480w, img/parki-13-768.webp 768w, img/parki-13-1024.webp 1024w" sizes="(max-width: 760px) 50vw, 25vw" width="1024" height="768" alt="Gąsienica widłogonki siwicy" loading="lazy" decoding="async"><figcaption>Gąsienica widłogonki siwicy</figcaption></figure><figure class="kafel k7"><img src="img/parki-12-747.webp" srcset="img/parki-12-480.webp 480w, img/parki-12-747.webp 747w" sizes="(max-width: 760px) 50vw, 25vw" width="747" height="1024" alt="Gąsienica pazia królowej" loading="lazy" decoding="async"><figcaption>Gąsienica pazia królowej</figcaption></figure>
+ <div class="blok">
+  <h1>Projektant mebli, produktów i&nbsp;scenografii w&nbsp;Krakowie</h1>
+  <p>Projektuję i wykonuję formy trójwymiarowe: unikatowe meble na zamówienie, produkty, scenografię teatralną i telewizyjną, wnętrza oraz wielkie owady do parków tematycznych.</p>
+  <div class="przyciski"><a class="btn btn-z" href="#parki">Zobacz prace</a><a class="btn btn-o" href="tel:+48608637210">608 637 210</a></div>
+ </div>
+</section>
+
+<section class="intro"><div class="wrap">
+ <h2>Od szkicu do obiektu, który można obejść dookoła</h2>
+ <div>
+  <p>Jestem absolwentem Wydziału Form Przemysłowych krakowskiej Akademii Sztuk Pięknych. Najbardziej pasjonują mnie formy trójwymiarowe, dlatego wiele projektów nie tylko projektuję, ale też sam wykonuję.</p>
+  <p>Współpracuję z firmami jako freelancer, prowadzę też warsztaty i zajęcia projektowe.</p>
+  <ul class="spis"><li><a href="#parki">Parki<span>01</span></a></li><li><a href="#meble">Meble<span>02</span></a></li><li><a href="#scenografia">Scenografia i reklama zewnętrzna<span>03</span></a></li><li><a href="#produkt">Produkt<span>04</span></a></li><li><a href="#wnetrza">Wnętrza<span>05</span></a></li><li><a href="#logo">Logo<span>06</span></a></li></ul>
+ </div>
+</div></section>
+
+<section class="dziedzina" id="parki" style="background:#fff">
+  <div class="wrap glowa">
+    <h2><span class="nr">01</span>Parki</h2>
+    <p>Figury owadów w dużej skali do parków tematycznych i parków rozrywki. Projekt, konstrukcja i wykonanie, z gatunkiem odwzorowanym jak w atlasie: biedronki, jelonek rogacz, modliszka, kleszcz pastwiskowy, mucha domowa.</p>
+  </div>
+  <div class="pas" data-pas><button class="strzalka lewo" type="button" aria-label="Poprzednie">&larr;</button><ul class="tor" tabindex="0"><li><button class="praca" type="button" data-duzy="img/parki-2-1024.webp" data-w="1024" data-h="666" data-t="Biedronka oczatka"><img src="img/parki-2-768.webp" srcset="img/parki-2-480.webp 480w, img/parki-2-768.webp 768w, img/parki-2-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="666" style="aspect-ratio:1024/666" alt="Biedronka oczatka" loading="lazy" decoding="async"></button><span class="podpis">Biedronka oczatka</span></li><li><button class="praca" type="button" data-duzy="img/parki-4-1024.webp" data-w="1024" data-h="768" data-t="Biedronka siedmiokropka"><img src="img/parki-4-768.webp" srcset="img/parki-4-480.webp 480w, img/parki-4-768.webp 768w, img/parki-4-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="768" style="aspect-ratio:1024/768" alt="Biedronka siedmiokropka" loading="lazy" decoding="async"></button><span class="podpis">Biedronka siedmiokropka</span></li><li><button class="praca" type="button" data-duzy="img/parki-14-1024.webp" data-w="1024" data-h="678" data-t="Jelonek rogacz"><img src="img/parki-14-768.webp" srcset="img/parki-14-480.webp 480w, img/parki-14-768.webp 768w, img/parki-14-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="678" style="aspect-ratio:1024/678" alt="Jelonek rogacz" loading="lazy" decoding="async"></button><span class="podpis">Jelonek rogacz</span></li><li><button class="praca" type="button" data-duzy="img/parki-12-747.webp" data-w="747" data-h="1024" data-t="Gąsienica pazia królowej"><img src="img/parki-12-747.webp" srcset="img/parki-12-480.webp 480w, img/parki-12-747.webp 747w" sizes="(max-width: 700px) 60vw, 460px" width="747" height="1024" style="aspect-ratio:747/1024" alt="Gąsienica pazia królowej" loading="lazy" decoding="async"></button><span class="podpis">Gąsienica pazia królowej</span></li><li><button class="praca" type="button" data-duzy="img/parki-13-1024.webp" data-w="1024" data-h="768" data-t="Gąsienica widłogonki siwicy"><img src="img/parki-13-768.webp" srcset="img/parki-13-480.webp 480w, img/parki-13-768.webp 768w, img/parki-13-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="768" style="aspect-ratio:1024/768" alt="Gąsienica widłogonki siwicy" loading="lazy" decoding="async"></button><span class="podpis">Gąsienica widłogonki siwicy</span></li><li><button class="praca" type="button" data-duzy="img/parki-32-1024.webp" data-w="1024" data-h="678" data-t="Modliszka europejska"><img src="img/parki-32-768.webp" srcset="img/parki-32-480.webp 480w, img/parki-32-768.webp 768w, img/parki-32-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="678" style="aspect-ratio:1024/678" alt="Modliszka europejska" loading="lazy" decoding="async"></button><span class="podpis">Modliszka europejska</span></li><li><button class="praca" type="button" data-duzy="img/parki-36-1024.webp" data-w="1024" data-h="768" data-t="Mucha domowa"><img src="img/parki-36-768.webp" srcset="img/parki-36-480.webp 480w, img/parki-36-768.webp 768w, img/parki-36-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="768" style="aspect-ratio:1024/768" alt="Mucha domowa" loading="lazy" decoding="async"></button><span class="podpis">Mucha domowa</span></li><li><button class="praca" type="button" data-duzy="img/parki-19-1024.webp" data-w="1024" data-h="768" data-t="Kleszcz pastwiskowy"><img src="img/parki-19-768.webp" srcset="img/parki-19-480.webp 480w, img/parki-19-768.webp 768w, img/parki-19-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="768" style="aspect-ratio:1024/768" alt="Kleszcz pastwiskowy" loading="lazy" decoding="async"></button><span class="podpis">Kleszcz pastwiskowy</span></li><li><button class="praca" type="button" data-duzy="img/parki-9-1024.webp" data-w="1024" data-h="678" data-t="Chrabąszcz majowy"><img src="img/parki-9-768.webp" srcset="img/parki-9-480.webp 480w, img/parki-9-768.webp 768w, img/parki-9-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="678" style="aspect-ratio:1024/678" alt="Chrabąszcz majowy" loading="lazy" decoding="async"></button><span class="podpis">Chrabąszcz majowy</span></li><li><button class="praca" type="button" data-duzy="img/parki-25-1024.webp" data-w="1024" data-h="678" data-t="Krzyżak zielony"><img src="img/parki-25-768.webp" srcset="img/parki-25-480.webp 480w, img/parki-25-768.webp 768w, img/parki-25-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="678" style="aspect-ratio:1024/678" alt="Krzyżak zielony" loading="lazy" decoding="async"></button><span class="podpis">Krzyżak zielony</span></li></ul><button class="strzalka prawo" type="button" aria-label="Następne">&rarr;</button></div>
+</section><section class="dziedzina" id="meble" style="background:#F1F2F4">
+  <div class="wrap glowa">
+    <h2><span class="nr">02</span>Meble</h2>
+    <p>Unikatowe meble na indywidualne zamówienie: seria łóżek z giętego drewna, lampy, krzesło hotelowe, mebel audio i drzwi przesuwne.</p>
+  </div>
+  <div class="pas" data-pas><button class="strzalka lewo" type="button" aria-label="Poprzednie">&larr;</button><ul class="tor" tabindex="0"><li><button class="praca" type="button" data-duzy="img/meble-2-768.webp" data-w="768" data-h="1015" data-t="Lampa"><img src="img/meble-2-768.webp" srcset="img/meble-2-480.webp 480w, img/meble-2-768.webp 768w" sizes="(max-width: 700px) 60vw, 460px" width="768" height="1015" style="aspect-ratio:768/1015" alt="Lampa" loading="lazy" decoding="async"></button><span class="podpis">Lampa</span></li><li><button class="praca" type="button" data-duzy="img/meble-3-708.webp" data-w="708" data-h="1024" data-t="Lampa"><img src="img/meble-3-708.webp" srcset="img/meble-3-480.webp 480w, img/meble-3-708.webp 708w" sizes="(max-width: 700px) 60vw, 460px" width="708" height="1024" style="aspect-ratio:708/1024" alt="Lampa" loading="lazy" decoding="async"></button><span class="podpis">Lampa</span></li><li><button class="praca" type="button" data-duzy="img/meble-4-1024.webp" data-w="1024" data-h="768" data-t="Łóżko 77"><img src="img/meble-4-768.webp" srcset="img/meble-4-480.webp 480w, img/meble-4-768.webp 768w, img/meble-4-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="768" style="aspect-ratio:1024/768" alt="Łóżko 77" loading="lazy" decoding="async"></button><span class="podpis">Łóżko 77</span></li><li><button class="praca" type="button" data-duzy="img/meble-1-1024.webp" data-w="1024" data-h="647" data-t="Krzesło hotelowe"><img src="img/meble-1-768.webp" srcset="img/meble-1-480.webp 480w, img/meble-1-768.webp 768w, img/meble-1-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="647" style="aspect-ratio:1024/647" alt="Krzesło hotelowe" loading="lazy" decoding="async"></button><span class="podpis">Krzesło hotelowe</span></li><li><button class="praca" type="button" data-duzy="img/meble-15-1024.webp" data-w="1024" data-h="726" data-t="Łóżko 11"><img src="img/meble-15-768.webp" srcset="img/meble-15-480.webp 480w, img/meble-15-768.webp 768w, img/meble-15-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="726" style="aspect-ratio:1024/726" alt="Łóżko 11" loading="lazy" decoding="async"></button><span class="podpis">Łóżko 11</span></li><li><button class="praca" type="button" data-duzy="img/meble-20-1024.webp" data-w="1024" data-h="732" data-t="Łóżko 16"><img src="img/meble-20-768.webp" srcset="img/meble-20-480.webp 480w, img/meble-20-768.webp 768w, img/meble-20-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="732" style="aspect-ratio:1024/732" alt="Łóżko 16" loading="lazy" decoding="async"></button><span class="podpis">Łóżko 16</span></li><li><button class="praca" type="button" data-duzy="img/meble-5-1024.webp" data-w="1024" data-h="732" data-t="Łóżko 1"><img src="img/meble-5-768.webp" srcset="img/meble-5-480.webp 480w, img/meble-5-768.webp 768w, img/meble-5-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="732" style="aspect-ratio:1024/732" alt="Łóżko 1" loading="lazy" decoding="async"></button><span class="podpis">Łóżko 1</span></li><li><button class="praca" type="button" data-duzy="img/meble-26-1024.webp" data-w="1024" data-h="768" data-t="Projekt drzwi przesuwnych"><img src="img/meble-26-768.webp" srcset="img/meble-26-480.webp 480w, img/meble-26-768.webp 768w, img/meble-26-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="768" style="aspect-ratio:1024/768" alt="Projekt drzwi przesuwnych" loading="lazy" decoding="async"></button><span class="podpis">Projekt drzwi przesuwnych</span></li></ul><button class="strzalka prawo" type="button" aria-label="Następne">&rarr;</button></div>
+</section><section class="dziedzina" id="scenografia" style="background:#fff">
+  <div class="wrap glowa">
+    <h2><span class="nr">03</span>Scenografia i reklama zewnętrzna</h2>
+    <p>Scenografia teatralna i telewizyjna, marionetki, maski, kostiumy do teledysków, smoki helowe oraz rzeźba i płaskorzeźba sakralna.</p>
+  </div>
+  <div class="pas" data-pas><button class="strzalka lewo" type="button" aria-label="Poprzednie">&larr;</button><ul class="tor" tabindex="0"><li><button class="praca" type="button" data-duzy="img/scenografia-24-1024.webp" data-w="1024" data-h="768" data-t="Smok helowy"><img src="img/scenografia-24-768.webp" srcset="img/scenografia-24-480.webp 480w, img/scenografia-24-768.webp 768w, img/scenografia-24-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="768" style="aspect-ratio:1024/768" alt="Smok helowy" loading="lazy" decoding="async"></button><span class="podpis">Smok helowy</span></li><li><button class="praca" type="button" data-duzy="img/scenografia-7-1024.webp" data-w="1024" data-h="768" data-t="Lekki smok - Pola Nadziei Kraków"><img src="img/scenografia-7-768.webp" srcset="img/scenografia-7-480.webp 480w, img/scenografia-7-768.webp 768w, img/scenografia-7-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="768" style="aspect-ratio:1024/768" alt="Lekki smok - Pola Nadziei Kraków" loading="lazy" decoding="async"></button><span class="podpis">Lekki smok - Pola Nadziei Kraków</span></li><li><button class="praca" type="button" data-duzy="img/scenografia-10-1024.webp" data-w="1024" data-h="768" data-t="Marionetka Tiny Turner"><img src="img/scenografia-10-768.webp" srcset="img/scenografia-10-480.webp 480w, img/scenografia-10-768.webp 768w, img/scenografia-10-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="768" style="aspect-ratio:1024/768" alt="Marionetka Tiny Turner" loading="lazy" decoding="async"></button><span class="podpis">Marionetka Tiny Turner</span></li><li><button class="praca" type="button" data-duzy="img/scenografia-11-1024.webp" data-w="1024" data-h="768" data-t="Marionetka Tiny Turner i fortepian"><img src="img/scenografia-11-768.webp" srcset="img/scenografia-11-480.webp 480w, img/scenografia-11-768.webp 768w, img/scenografia-11-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="768" style="aspect-ratio:1024/768" alt="Marionetka Tiny Turner i fortepian" loading="lazy" decoding="async"></button><span class="podpis">Marionetka Tiny Turner i fortepian</span></li><li><button class="praca" type="button" data-duzy="img/scenografia-9-1024.webp" data-w="1024" data-h="768" data-t="Marionetka Elwisa Presleya"><img src="img/scenografia-9-768.webp" srcset="img/scenografia-9-480.webp 480w, img/scenografia-9-768.webp 768w, img/scenografia-9-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="768" style="aspect-ratio:1024/768" alt="Marionetka Elwisa Presleya" loading="lazy" decoding="async"></button><span class="podpis">Marionetka Elwisa Presleya</span></li><li><button class="praca" type="button" data-duzy="img/scenografia-4-768.webp" data-w="768" data-h="1024" data-t="Kostium do videoclipu OSTR&#x27;a"><img src="img/scenografia-4-768.webp" srcset="img/scenografia-4-480.webp 480w, img/scenografia-4-768.webp 768w" sizes="(max-width: 700px) 60vw, 460px" width="768" height="1024" style="aspect-ratio:768/1024" alt="Kostium do videoclipu OSTR&#x27;a" loading="lazy" decoding="async"></button><span class="podpis">Kostium do videoclipu OSTR&#x27;a</span></li><li><button class="praca" type="button" data-duzy="img/scenografia-17-768.webp" data-w="768" data-h="1024" data-t="Maska Bronisława Chromego"><img src="img/scenografia-17-768.webp" srcset="img/scenografia-17-480.webp 480w, img/scenografia-17-768.webp 768w" sizes="(max-width: 700px) 60vw, 460px" width="768" height="1024" style="aspect-ratio:768/1024" alt="Maska Bronisława Chromego" loading="lazy" decoding="async"></button><span class="podpis">Maska Bronisława Chromego</span></li><li><button class="praca" type="button" data-duzy="img/scenografia-22-1024.webp" data-w="1024" data-h="768" data-t="Płaskorzeźba - ostatnia wieczerza"><img src="img/scenografia-22-768.webp" srcset="img/scenografia-22-480.webp 480w, img/scenografia-22-768.webp 768w, img/scenografia-22-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="768" style="aspect-ratio:1024/768" alt="Płaskorzeźba - ostatnia wieczerza" loading="lazy" decoding="async"></button><span class="podpis">Płaskorzeźba - ostatnia wieczerza</span></li><li><button class="praca" type="button" data-duzy="img/scenografia-1-768.webp" data-w="768" data-h="865" data-t="Chrystus z figury Matki Bożej"><img src="img/scenografia-1-768.webp" srcset="img/scenografia-1-480.webp 480w, img/scenografia-1-768.webp 768w" sizes="(max-width: 700px) 60vw, 460px" width="768" height="865" style="aspect-ratio:768/865" alt="Chrystus z figury Matki Bożej" loading="lazy" decoding="async"></button><span class="podpis">Chrystus z figury Matki Bożej</span></li><li><button class="praca" type="button" data-duzy="img/scenografia-27-768.webp" data-w="768" data-h="1024" data-t="Stacja drogi krzyżowej nr9"><img src="img/scenografia-27-768.webp" srcset="img/scenografia-27-480.webp 480w, img/scenografia-27-768.webp 768w" sizes="(max-width: 700px) 60vw, 460px" width="768" height="1024" style="aspect-ratio:768/1024" alt="Stacja drogi krzyżowej nr9" loading="lazy" decoding="async"></button><span class="podpis">Stacja drogi krzyżowej nr9</span></li></ul><button class="strzalka prawo" type="button" aria-label="Następne">&rarr;</button></div>
+</section><section class="dziedzina" id="produkt" style="background:#F1F2F4">
+  <div class="wrap glowa">
+    <h2><span class="nr">04</span>Produkt</h2>
+    <p>Wzornictwo przemysłowe: oświetlenie, sprzęt audio i AGD, sztućce dla Gerlacha, świeczniki dla Artefe, samochód kempingowy Niewiadów (współpraca z G. Matusikiem), siedzisko parkowe.</p>
+  </div>
+  <div class="pas" data-pas><button class="strzalka lewo" type="button" aria-label="Poprzednie">&larr;</button><ul class="tor" tabindex="0"><li><button class="praca" type="button" data-duzy="img/produkt-5-1024.webp" data-w="1024" data-h="751" data-t="Kierownica rowerowa"><img src="img/produkt-5-768.webp" srcset="img/produkt-5-480.webp 480w, img/produkt-5-768.webp 768w, img/produkt-5-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="751" style="aspect-ratio:1024/751" alt="Kierownica rowerowa" loading="lazy" decoding="async"></button><span class="podpis">Kierownica rowerowa</span></li><li><button class="praca" type="button" data-duzy="img/produkt-6-1024.webp" data-w="1024" data-h="762" data-t="Lampa solarna"><img src="img/produkt-6-768.webp" srcset="img/produkt-6-480.webp 480w, img/produkt-6-768.webp 768w, img/produkt-6-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="762" style="aspect-ratio:1024/762" alt="Lampa solarna" loading="lazy" decoding="async"></button><span class="podpis">Lampa solarna</span></li><li><button class="praca" type="button" data-duzy="img/produkt-9-1024.webp" data-w="1024" data-h="718" data-t="Oczyszczacz powietrza"><img src="img/produkt-9-768.webp" srcset="img/produkt-9-480.webp 480w, img/produkt-9-768.webp 768w, img/produkt-9-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="718" style="aspect-ratio:1024/718" alt="Oczyszczacz powietrza" loading="lazy" decoding="async"></button><span class="podpis">Oczyszczacz powietrza</span></li><li><button class="praca" type="button" data-duzy="img/produkt-16-768.webp" data-w="768" data-h="768" data-t="Projekt okularów"><img src="img/produkt-16-768.webp" srcset="img/produkt-16-480.webp 480w, img/produkt-16-768.webp 768w" sizes="(max-width: 700px) 60vw, 460px" width="768" height="768" style="aspect-ratio:768/768" alt="Projekt okularów" loading="lazy" decoding="async"></button><span class="podpis">Projekt okularów</span></li><li><button class="praca" type="button" data-duzy="img/produkt-22-1024.webp" data-w="1024" data-h="768" data-t="Projekt sztućców - Gerlach"><img src="img/produkt-22-768.webp" srcset="img/produkt-22-480.webp 480w, img/produkt-22-768.webp 768w, img/produkt-22-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="768" style="aspect-ratio:1024/768" alt="Projekt sztućców - Gerlach" loading="lazy" decoding="async"></button><span class="podpis">Projekt sztućców - Gerlach</span></li><li><button class="praca" type="button" data-duzy="img/produkt-23-1024.webp" data-w="1024" data-h="743" data-t="Projekt świeczników - Artefe"><img src="img/produkt-23-768.webp" srcset="img/produkt-23-480.webp 480w, img/produkt-23-768.webp 768w, img/produkt-23-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="743" style="aspect-ratio:1024/743" alt="Projekt świeczników - Artefe" loading="lazy" decoding="async"></button><span class="podpis">Projekt świeczników - Artefe</span></li><li><button class="praca" type="button" data-duzy="img/produkt-18-1024.webp" data-w="1024" data-h="614" data-t="Projekt samochodu campingowego - Niewiadów (współpraca z G. Matusikiem)"><img src="img/produkt-18-768.webp" srcset="img/produkt-18-480.webp 480w, img/produkt-18-768.webp 768w, img/produkt-18-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="614" style="aspect-ratio:1024/614" alt="Projekt samochodu campingowego - Niewiadów (współpraca z G. Matusikiem)" loading="lazy" decoding="async"></button><span class="podpis">Projekt samochodu campingowego - Niewiadów (współpraca z G. Matusikiem)</span></li><li><button class="praca" type="button" data-duzy="img/produkt-24-737.webp" data-w="737" data-h="1024" data-t="Projekt zestawu audio"><img src="img/produkt-24-737.webp" srcset="img/produkt-24-480.webp 480w, img/produkt-24-737.webp 737w" sizes="(max-width: 700px) 60vw, 460px" width="737" height="1024" style="aspect-ratio:737/1024" alt="Projekt zestawu audio" loading="lazy" decoding="async"></button><span class="podpis">Projekt zestawu audio</span></li><li><button class="praca" type="button" data-duzy="img/produkt-1-1024.webp" data-w="1024" data-h="721" data-t="Drewniana misa"><img src="img/produkt-1-768.webp" srcset="img/produkt-1-480.webp 480w, img/produkt-1-768.webp 768w, img/produkt-1-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="721" style="aspect-ratio:1024/721" alt="Drewniana misa" loading="lazy" decoding="async"></button><span class="podpis">Drewniana misa</span></li><li><button class="praca" type="button" data-duzy="img/produkt-19-1024.webp" data-w="1024" data-h="752" data-t="Projekt siedziska parkowego"><img src="img/produkt-19-768.webp" srcset="img/produkt-19-480.webp 480w, img/produkt-19-768.webp 768w, img/produkt-19-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="752" style="aspect-ratio:1024/752" alt="Projekt siedziska parkowego" loading="lazy" decoding="async"></button><span class="podpis">Projekt siedziska parkowego</span></li></ul><button class="strzalka prawo" type="button" aria-label="Następne">&rarr;</button></div>
+</section><section class="dziedzina" id="wnetrza" style="background:#fff">
+  <div class="wrap glowa">
+    <h2><span class="nr">05</span>Wnętrza</h2>
+    <p>Projekty garderób, kuchni i mebli do konkretnego wnętrza, dopasowane do miejsca i sposobu używania.</p>
+  </div>
+  <div class="pas" data-pas><button class="strzalka lewo" type="button" aria-label="Poprzednie">&larr;</button><ul class="tor" tabindex="0"><li><button class="praca" type="button" data-duzy="img/wnetrza-1-1024.webp" data-w="1024" data-h="647" data-t="Projekt garderoby"><img src="img/wnetrza-1-768.webp" srcset="img/wnetrza-1-480.webp 480w, img/wnetrza-1-768.webp 768w, img/wnetrza-1-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="647" style="aspect-ratio:1024/647" alt="Projekt garderoby" loading="lazy" decoding="async"></button><span class="podpis">Projekt garderoby</span></li><li><button class="praca" type="button" data-duzy="img/wnetrza-2-1024.webp" data-w="1024" data-h="647" data-t="Projekt garderoby"><img src="img/wnetrza-2-768.webp" srcset="img/wnetrza-2-480.webp 480w, img/wnetrza-2-768.webp 768w, img/wnetrza-2-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="647" style="aspect-ratio:1024/647" alt="Projekt garderoby" loading="lazy" decoding="async"></button><span class="podpis">Projekt garderoby</span></li><li><button class="praca" type="button" data-duzy="img/wnetrza-3-1024.webp" data-w="1024" data-h="647" data-t="Projekt garderoby"><img src="img/wnetrza-3-768.webp" srcset="img/wnetrza-3-480.webp 480w, img/wnetrza-3-768.webp 768w, img/wnetrza-3-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="647" style="aspect-ratio:1024/647" alt="Projekt garderoby" loading="lazy" decoding="async"></button><span class="podpis">Projekt garderoby</span></li><li><button class="praca" type="button" data-duzy="img/wnetrza-4-1024.webp" data-w="1024" data-h="647" data-t="Projekt garderoby"><img src="img/wnetrza-4-768.webp" srcset="img/wnetrza-4-480.webp 480w, img/wnetrza-4-768.webp 768w, img/wnetrza-4-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="647" style="aspect-ratio:1024/647" alt="Projekt garderoby" loading="lazy" decoding="async"></button><span class="podpis">Projekt garderoby</span></li><li><button class="praca" type="button" data-duzy="img/wnetrza-5-1024.webp" data-w="1024" data-h="768" data-t="Toaletka zebrano"><img src="img/wnetrza-5-768.webp" srcset="img/wnetrza-5-480.webp 480w, img/wnetrza-5-768.webp 768w, img/wnetrza-5-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="768" style="aspect-ratio:1024/768" alt="Toaletka zebrano" loading="lazy" decoding="async"></button><span class="podpis">Toaletka zebrano</span></li><li><button class="praca" type="button" data-duzy="img/wnetrza-6-768.webp" data-w="768" data-h="1024" data-t="Wnętrze kuchni"><img src="img/wnetrza-6-768.webp" srcset="img/wnetrza-6-480.webp 480w, img/wnetrza-6-768.webp 768w" sizes="(max-width: 700px) 60vw, 460px" width="768" height="1024" style="aspect-ratio:768/1024" alt="Wnętrze kuchni" loading="lazy" decoding="async"></button><span class="podpis">Wnętrze kuchni</span></li></ul><button class="strzalka prawo" type="button" aria-label="Następne">&rarr;</button></div>
+</section><section class="dziedzina" id="logo" style="background:#F1F2F4">
+  <div class="wrap glowa">
+    <h2><span class="nr">06</span>Logo</h2>
+    <p>Znaki i logotypy, między innymi dla Stolarstwa Wagner i konferencji medycznej w Łodzi, oraz projekt ścianki reklamowej.</p>
+  </div>
+  <div class="pas" data-pas><button class="strzalka lewo" type="button" aria-label="Poprzednie">&larr;</button><ul class="tor" tabindex="0"><li><button class="praca" type="button" data-duzy="img/logo-1-1024.webp" data-w="1024" data-h="417" data-t="Logo Wagner Projekt"><img src="img/logo-1-768.webp" srcset="img/logo-1-480.webp 480w, img/logo-1-768.webp 768w, img/logo-1-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="417" style="aspect-ratio:1024/417" alt="Logo Wagner Projekt" loading="lazy" decoding="async"></button><span class="podpis">Logo Wagner Projekt</span></li><li><button class="praca" type="button" data-duzy="img/logo-3-1024.webp" data-w="1024" data-h="381" data-t="Logotyp Stolarstwo Wagner"><img src="img/logo-3-768.webp" srcset="img/logo-3-480.webp 480w, img/logo-3-768.webp 768w, img/logo-3-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="381" style="aspect-ratio:1024/381" alt="Logotyp Stolarstwo Wagner" loading="lazy" decoding="async"></button><span class="podpis">Logotyp Stolarstwo Wagner</span></li><li><button class="praca" type="button" data-duzy="img/logo-4-1024.webp" data-w="1024" data-h="342" data-t="Logotyp Wagner 3D"><img src="img/logo-4-768.webp" srcset="img/logo-4-480.webp 480w, img/logo-4-768.webp 768w, img/logo-4-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="342" style="aspect-ratio:1024/342" alt="Logotyp Wagner 3D" loading="lazy" decoding="async"></button><span class="podpis">Logotyp Wagner 3D</span></li><li><button class="praca" type="button" data-duzy="img/logo-2-1024.webp" data-w="1024" data-h="346" data-t="Logotyp Konferencji Medycznej - Łódź"><img src="img/logo-2-768.webp" srcset="img/logo-2-480.webp 480w, img/logo-2-768.webp 768w, img/logo-2-1024.webp 1024w" sizes="(max-width: 700px) 60vw, 460px" width="1024" height="346" style="aspect-ratio:1024/346" alt="Logotyp Konferencji Medycznej - Łódź" loading="lazy" decoding="async"></button><span class="podpis">Logotyp Konferencji Medycznej - Łódź</span></li><li><button class="praca" type="button" data-duzy="img/logo-5-921.webp" data-w="921" data-h="768" data-t="Projekt ścianki reklamowej - ZARYS Zabrze"><img src="img/logo-5-768.webp" srcset="img/logo-5-480.webp 480w, img/logo-5-768.webp 768w, img/logo-5-921.webp 921w" sizes="(max-width: 700px) 60vw, 460px" width="921" height="768" style="aspect-ratio:921/768" alt="Projekt ścianki reklamowej - ZARYS Zabrze" loading="lazy" decoding="async"></button><span class="podpis">Projekt ścianki reklamowej - ZARYS Zabrze</span></li></ul><button class="strzalka prawo" type="button" aria-label="Następne">&rarr;</button></div>
+</section>
+
+<section class="ciemna" id="o-mnie"><div class="wrap">
+ <div>
+  <h2>Tomasz Wagner</h2>
+  <p>Ukończyłem Wydział Form Przemysłowych ASP w Krakowie. Tworzę unikatowe meble na indywidualne zamówienia, projektuję sprzęt AGD i RTV, materiały POS, scenografię teatralną i telewizyjną oraz wnętrza. Projektuję i wykonuję obiekty do tematycznych parków rozrywki.</p>
+  <p>Współpracuję z wieloma firmami jako freelancer i prowadzę warsztaty oraz zajęcia projektowe.</p>
+  <ul class="fakty"><li>Meble na indywidualne zamówienie</li><li>Wzornictwo przemysłowe, AGD i RTV</li><li>Scenografia teatralna i telewizyjna</li><li>Obiekty do parków tematycznych</li></ul>
+ </div>
+ <div class="znak-duzy"><svg class="znak" viewBox="0 0 186 186" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 0h186v54h-36V36h-39v54h0v60h39V90h36v96H0V90h36v60h39V36H36v18H0z"/></svg></div>
+</div></section>
+
+<section class="prasa" id="prasa">
+ <div class="wrap glowa"><h2><span class="nr">07</span>Prasa</h2><p>Projekty pokazywane między innymi w Elle Decoration, Top Dom, magazynie Innowacyjny Start i katalogu 17. Biennale Wzornictwa Przemysłowego BIO w Lublanie.</p></div>
+ <div class="pas" data-pas><button class="strzalka lewo" type="button" aria-label="Poprzednie">&larr;</button><ul class="tor" tabindex="0"><li><button class="praca okladka" type="button" data-duzy="img/prasa-6-768.webp" data-w="768" data-h="1015" data-t="Elle"><img src="img/prasa-6-768.webp" srcset="img/prasa-6-480.webp 480w, img/prasa-6-768.webp 768w" sizes="(max-width: 700px) 45vw, 300px" width="768" height="1015" style="aspect-ratio:768/1015" alt="Elle" loading="lazy" decoding="async"></button><span class="podpis">Elle</span></li><li><button class="praca okladka" type="button" data-duzy="img/prasa-7-738.webp" data-w="738" data-h="1024" data-t="Innowacyjny start"><img src="img/prasa-7-738.webp" srcset="img/prasa-7-480.webp 480w, img/prasa-7-738.webp 738w" sizes="(max-width: 700px) 45vw, 300px" width="738" height="1024" style="aspect-ratio:738/1024" alt="Innowacyjny start" loading="lazy" decoding="async"></button><span class="podpis">Innowacyjny start</span></li><li><button class="praca okladka" type="button" data-duzy="img/prasa-17-731.webp" data-w="731" data-h="1024" data-t="Top dom"><img src="img/prasa-17-731.webp" srcset="img/prasa-17-480.webp 480w, img/prasa-17-731.webp 731w" sizes="(max-width: 700px) 45vw, 300px" width="731" height="1024" style="aspect-ratio:731/1024" alt="Top dom" loading="lazy" decoding="async"></button><span class="podpis">Top dom</span></li><li><button class="praca okladka" type="button" data-duzy="img/prasa-1-747.webp" data-w="747" data-h="1024" data-t="BIO 2000"><img src="img/prasa-1-747.webp" srcset="img/prasa-1-480.webp 480w, img/prasa-1-747.webp 747w" sizes="(max-width: 700px) 45vw, 300px" width="747" height="1024" style="aspect-ratio:747/1024" alt="BIO 2000" loading="lazy" decoding="async"></button><span class="podpis">BIO 2000</span></li><li><button class="praca okladka" type="button" data-duzy="img/prasa-19-719.webp" data-w="719" data-h="1024" data-t="Wzornictwo jakie mamy"><img src="img/prasa-19-719.webp" srcset="img/prasa-19-480.webp 480w, img/prasa-19-719.webp 719w" sizes="(max-width: 700px) 45vw, 300px" width="719" height="1024" style="aspect-ratio:719/1024" alt="Wzornictwo jakie mamy" loading="lazy" decoding="async"></button><span class="podpis">Wzornictwo jakie mamy</span></li><li><button class="praca okladka" type="button" data-duzy="img/prasa-4-726.webp" data-w="726" data-h="1024" data-t="Eks magazyn"><img src="img/prasa-4-726.webp" srcset="img/prasa-4-480.webp 480w, img/prasa-4-726.webp 726w" sizes="(max-width: 700px) 45vw, 300px" width="726" height="1024" style="aspect-ratio:726/1024" alt="Eks magazyn" loading="lazy" decoding="async"></button><span class="podpis">Eks magazyn</span></li><li><button class="praca okladka" type="button" data-duzy="img/prasa-11-768.webp" data-w="768" data-h="949" data-t="Ogrody"><img src="img/prasa-11-768.webp" srcset="img/prasa-11-480.webp 480w, img/prasa-11-768.webp 768w" sizes="(max-width: 700px) 45vw, 300px" width="768" height="949" style="aspect-ratio:768/949" alt="Ogrody" loading="lazy" decoding="async"></button><span class="podpis">Ogrody</span></li></ul><button class="strzalka prawo" type="button" aria-label="Następne">&rarr;</button></div>
+</section>
+
+<section class="kontakt" id="kontakt"><div class="wrap">
+ <div>
+  <h2>Porozmawiajmy o projekcie</h2>
+  <p>Mebel na wymiar, produkt do wdrożenia, scenografia albo figura do parku. Proszę napisać kilka słów o pomyśle, odpowiem z propozycją dalszych kroków.</p>
+  <div class="dane">
+   <a href="tel:+48608637210"><span>Telefon</span>+48 608 637 210</a>
+   <a href="mailto:wagner.tomasz@gmail.com"><span>E-mail</span>wagner.tomasz@gmail.com</a>
+   <div><span style="display:block;color:var(--tx2);font-size:14px;font-weight:600">Pracownia</span><b style="font-size:clamp(22px,2.2vw,32px)">Kraków</b></div>
+  </div>
+ </div>
+ <form>
+  <label>Imię i nazwisko<input name="imie" autocomplete="name"></label>
+  <label>E-mail lub telefon<input name="kontakt" autocomplete="email"></label>
+  <label>Czego dotyczy projekt<select name="temat"><option>Meble na zamówienie</option><option>Produkt</option><option>Scenografia i reklama zewnętrzna</option><option>Obiekty do parków</option><option>Wnętrza</option><option>Logo</option><option>Inne</option></select></label>
+  <label>Wiadomość<textarea name="wiadomosc"></textarea></label>
+  <button class="btn" type="submit">Wyślij wiadomość</button>
+  <p class="uwaga" aria-live="polite"></p>
+ </form>
+</div></section>
+</main>
+
+<footer class="stopka"><div class="wrap">
+ <a class="marka" href="#top"><span class="ico"><svg class="znak" viewBox="0 0 186 186" aria-hidden="true" focusable="false"><path fill="currentColor" d="M0 0h186v54h-36V36h-39v54h0v60h39V90h36v96H0V90h36v60h39V36H36v18H0z"/></svg></span><span>Wagner Projekt<small>&copy; 2026 Tomasz Wagner, Kraków</small></span></a>
+ <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=tomaszwagner.com&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+</div></footer>
+
+<dialog id="lb" aria-label="Powiększone zdjęcie"><button class="lb-x" type="button" aria-label="Zamknij">&times;</button><div class="lb"><img alt=""><p></p></div></dialog>
+<script>
+(function(){
+ var b=document.querySelector('.burger'),m=document.getElementById('menu');
+ b.addEventListener('click',function(){var o=m.classList.toggle('otw');b.setAttribute('aria-expanded',o);b.textContent=o?'Zamknij':'Menu'});
+ m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('otw');b.setAttribute('aria-expanded','false');b.textContent='Menu'}});
+ document.querySelectorAll('[data-pas]').forEach(function(p){
+  var t=p.querySelector('.tor'),l=p.querySelector('.lewo'),r=p.querySelector('.prawo');
+  function st(){var max=t.scrollWidth-t.clientWidth-2;if(l)l.disabled=t.scrollLeft<=2;if(r)r.disabled=t.scrollLeft>=max}
+  function krok(k){t.scrollBy({left:k*t.clientWidth*.8,behavior:'smooth'})}
+  if(l)l.addEventListener('click',function(){krok(-1)});if(r)r.addEventListener('click',function(){krok(1)});
+  t.addEventListener('scroll',st,{passive:true});window.addEventListener('resize',st);st();
+  var dn=false,x0=0,s0=0,ruch=0;
+  t.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;dn=true;ruch=0;x0=e.clientX;s0=t.scrollLeft});
+  window.addEventListener('pointermove',function(e){if(!dn)return;var d=e.clientX-x0;ruch=Math.max(ruch,Math.abs(d));if(ruch>5){t.classList.add('ciag');t.scrollLeft=s0-d}});
+  window.addEventListener('pointerup',function(){if(!dn)return;dn=false;t.classList.remove('ciag')});
+  t.addEventListener('click',function(e){if(ruch>5){e.preventDefault();e.stopPropagation();ruch=0}},true);
+  t.addEventListener('dragstart',function(e){e.preventDefault()});
+ });
+ var d=document.getElementById('lb'),di=d.querySelector('img'),dp=d.querySelector('p');
+ document.querySelectorAll('.praca').forEach(function(k){k.addEventListener('click',function(){
+  di.src=k.dataset.duzy;di.alt=k.dataset.t;di.width=k.dataset.w;di.height=k.dataset.h;d.style.setProperty('--w',k.dataset.w+'px');dp.textContent=k.dataset.t;d.showModal()})});
+ d.addEventListener('click',function(e){if(e.target===d||e.target.classList.contains('lb-x'))d.close()});
+ var linki=[].slice.call(document.querySelectorAll('.menu a'));
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){linki.forEach(function(a){a.classList.toggle('akt',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+ linki.forEach(function(a){var s=document.querySelector(a.getAttribute('href'));if(s)io.observe(s)});
+ document.querySelector('form').addEventListener('submit',function(e){e.preventDefault();this.querySelector('.uwaga').textContent='To formularz pokazowy w podglądzie. W docelowej stronie wiadomość trafi prosto na Pana skrzynkę.'});
+})();
+</script>
+</body>
+</html>
